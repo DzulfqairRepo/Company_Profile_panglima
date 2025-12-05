@@ -9,23 +9,22 @@
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-        <!-- Navigation -->
-    <nav class="bg-white border-b border-gray-200">
+    <nav class="sticky top-0 z-40 bg-white border-b border-gray-200">
         <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
              <div class="flex items-center gap-2.5">
                 <img src="{{ asset('images/Company_Logo.jpeg') }}" alt="TATA NIAGA LESTARI logo" class="h-10 w-10 object-cover rounded-full">
-                <span class="text-2xl font-bold text-blue-600">Panglima Laut Fresh Frozen</span>
+                                <span class="text-2xl font-bold text-blue-600 drop-shadow-lg shadow-blue-400 bg-gradient-to-r from-blue-50 to-blue-100 px-4 py-2 rounded-lg">Panglima Laut Fresh Frozen</span>
              </div>
             <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="flex flex-col md:flex-row md:space-x-8">
-                    <li><a href="{{ route('index') }}" class="text-gray-700 hover:text-blue-600">Home</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Fishery Products</a></li>
+                    <li><a href="{{ route('index') }}" class="font-bold text-gray-700 hover:text-blue-600">Home</a></li>
+                    <li><a href="{{ route('fishery-products') }}" class="text-gray-700 hover:text-blue-600">Fishery Products</a></li>
                     <li><a href="#" class="text-gray-700 hover:text-blue-600">Payment Terms</a></li>
                     <li><a href="#" class="text-gray-700 hover:text-blue-600">Certification</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+                    <li><a href="{{ route('contact') }}" class="text-gray-700 hover:text-blue-600">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -35,7 +34,7 @@
     <section class="relative bg-cover bg-center py-20" style="background-image: url('{{ asset('images/nelayan2.png') }}')">
         <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
         <div class="relative max-w-screen-xl mx-auto px-4 text-center text-white">
-            <img src="{{ asset('images/Company.png') }}" alt="TATA NIAGA LESTARI logo" class="h-80 w-80 object-cover rounded-full mx-auto mb-6">
+            <img src="{{ asset('images/Company_Logo.jpeg') }}" alt="TATA NIAGA LESTARI logo" class="h-80 w-80 object-cover rounded-full mx-auto mb-6">
             <h1 class="text-5xl font-bold mb-4">Tata Niaga Lestari Company</h1>
             <p class="text-xl mb-8">Tata Niaga Lestari Work Export, Import and Trading By applying the advanced technology and High Quality Product, we are committed to providing the best quality seafood & Agriculture product by operating strict practices of food hygiene, sanitation and quality control</p>
         </div>
@@ -57,7 +56,7 @@
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                 <div class="mb-4 flex justify-center">
                     <svg class="w-16 h-16 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M8 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1h2a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2Zm6 1h-4v2H9a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2h-1V4Zm-3 8a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-2-1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H9Zm2 5a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-2-1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H9Z" clip-rule="evenodd"/>
+                        <path fill-rule="evenodd" d="M8 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1h2a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2Zm6 1h-4v2H9a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2h-1V4Zm-3 8a1 1 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd"/>
                     </svg>
                 </div>
                 <h3 class="text-2xl font-bold text-blue-600 mb-4 text-center">Mission</h3>
@@ -81,11 +80,11 @@
     <!-- Milestone Section -->
     <section class="max-w-screen-xl mx-auto px-4 py-16">
         <h2 class="text-4xl font-bold text-center text-blue-600 mb-12">Milestone</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                         <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                 <div class="mb-4 flex justify-center">
                     <svg class="w-16 h-16 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M4 4a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2v14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2V5a1 1 0 0 1-1-1Zm5 2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H9Zm5 0a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1Zm-5 4a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H9Zm5 0a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1h-1Zm-3 4a2 2 0 0 0-2 2v3h2v-3h2v3h2v-3a2 2 0 0 0-2-2h-2Z" clip-rule="evenodd"/>
+                        <path fill-rule="evenodd" d="M4 4a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2v14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2V5a1 1 0 0 1-1-1Zm5 2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H9Zm6 0a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1Zm-5 4a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H9Zm5 0a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1h-1Zm-3 4a2 2 0 0 0-2 2v3h2v-3h2v3h2v-3a2 2 0 0 0-2-2h-2Z" clip-rule="evenodd"/>
                     </svg>
                 </div>
                 <div>
@@ -130,6 +129,24 @@
                 </div>
                 <div>
                     <p class="text-gray-600 text-justify">We strategically expand our business field from domestic to global market. We periodically send decorative fish to domestic market & fresh fish, bamboo, & coconut to global market.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition w-full md:w-1/3">
+                <div class="mb-4 flex justify-center">
+                    <svg class="w-16 h-16 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm1 13h-2v-2h2v2zm0-4h-2V7h2v6z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-blue-600 mb-2 text-center">Company Revival</h3>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-blue-600 mb-4 text-center">2020-2022</h4>
+                </div>
+                <div>
+                    <p class="text-gray-600 text-justify">The company faced temporary closure during the COVID-19 pandemic. With resilience and determination, we successfully revived our operations in 2022, resuming our commitment to providing quality seafood and agriculture products to our valued customers worldwide.</p>
                 </div>
             </div>
         </div>
@@ -186,10 +203,63 @@
         </div>
     </section>
 
+    <!-- Top Markets Section -->
+    <section class="max-w-screen-xl mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center text-blue-600 mb-12">Top Markets</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Markets Image Card -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition flex items-center justify-center">
+                <img src="{{ asset('images/map2.png') }}" alt="Top Markets Map" class="w-full h-auto rounded-lg object-contain">
+            </div>
+
+            <!-- Markets List Card -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <h3 class="text-2xl font-bold text-blue-600 mb-8 text-center">Our Key Markets</h3>
+                <div class="space-y-6">
+                    <!-- China -->
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <img src="https://flagcdn.com/w80/cn.png" alt="China flag" class="w-12 h-8 object-cover rounded mr-4">
+                        <span class="text-lg font-semibold text-gray-700">China</span>
+                    </div>
+
+                    <!-- United States -->
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <img src="https://flagcdn.com/w80/us.png" alt="United States flag" class="w-12 h-8 object-cover rounded mr-4">
+                        <span class="text-lg font-semibold text-gray-700">United States</span>
+                    </div>
+
+                    <!-- Europe -->
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <img src="https://flagcdn.com/w80/eu.png" alt="Europe flag" class="w-12 h-8 object-cover rounded mr-4">
+                        <span class="text-lg font-semibold text-gray-700">Europe</span>
+                    </div>
+
+                    <!-- South Korea -->
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <img src="https://flagcdn.com/w80/kr.png" alt="South Korea flag" class="w-12 h-8 object-cover rounded mr-4">
+                        <span class="text-lg font-semibold text-gray-700">South Korea</span>
+                    </div>
+
+                    <!-- Japan -->
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <img src="https://flagcdn.com/w80/jp.png" alt="Japan flag" class="w-12 h-8 object-cover rounded mr-4">
+                        <span class="text-lg font-semibold text-gray-700">Japan</span>
+                    </div>
+
+                    <!-- Middle East -->
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <img src="https://flagcdn.com/w80/sa.png" alt="Middle East flag" class="w-12 h-8 object-cover rounded mr-4">
+                        <span class="text-lg font-semibold text-gray-700">Middle East</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="sticky bottom-0 z-40 bg-gray-800 text-white py-8">
         <div class="max-w-screen-xl mx-auto px-4 text-center">
-            <p>&copy; 2024 Company Name. All rights reserved.</p>
+            <p>&copy; 2026 Panglima Laut Fresh Frozen. All rights reserved.</p>
         </div>
     </footer>
 
