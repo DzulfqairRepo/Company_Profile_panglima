@@ -13,3 +13,12 @@ Route::get('/fishery-products', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
+
+Route::get('/certificate', function () {
+    return view('certificate');
+})->name('certificate');
+
+Route::get('/payment-terms', function () {
+    return view('payment-terms');
+})->name('payment-terms');

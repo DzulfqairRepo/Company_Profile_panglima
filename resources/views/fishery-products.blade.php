@@ -37,8 +37,8 @@
                 <ul class="flex flex-col md:flex-row md:space-x-8 md:items-center text-sm md:text-base">
                     <li><a href="{{ route('index') }}" class="text-gray-700 hover:text-blue-600">Home</a></li>
                     <li><a href="{{ route('fishery-products') }}" class="text-gray-700 hover:text-blue-600 font-bold text-blue-600">Fishery Products</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Payment Terms</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-blue-600">Certification</a></li>
+                    <li><a href="{{ route('payment-terms') }}" class="text-gray-700 hover:text-blue-600">Payment Terms</a></li>
+                    <li><a href="{{ route('certificate') }}" class="text-gray-700 hover:text-blue-600">Certification</a></li>
                     <li><a href="{{ route('contact') }}" class="text-gray-700 hover:text-blue-600">Contact</a></li>
                     <li class="md:block hidden">
                         <button id="nav-cart-btn" data-modal-target="cart-modal" data-modal-toggle="cart-modal" class="relative text-gray-700 hover:text-blue-600 transition">
