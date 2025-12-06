@@ -82,7 +82,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$9.00/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -99,7 +99,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$8.00/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -116,7 +116,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$5.80/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -133,7 +133,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$1.80/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -150,7 +150,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$1.80/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -167,7 +167,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$5.40/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -184,7 +184,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$1.80/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -201,7 +201,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$10.80/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -218,7 +218,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$6.50/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -248,7 +248,7 @@
                                 </div>
                                 <input type="number" placeholder="Qty" class="w-full px-2 py-1 border border-gray-300 rounded mb-2 text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -265,7 +265,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$18.00/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -282,7 +282,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$7.20/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -299,7 +299,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$7.20/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -316,7 +316,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$10.80/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -333,7 +333,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$2.50/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -350,7 +350,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$107.20/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -367,7 +367,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$57.20/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -384,7 +384,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$50.00/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -401,7 +401,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$32.30/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -418,7 +418,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$21.50/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
 
@@ -435,7 +435,7 @@
                                 <span class="text-lg md:text-2xl font-bold text-blue-600">$17.90/kg</span>
                                 <input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm">
                             </div>
-                            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button>
+                            <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
                 </div>
