@@ -40,6 +40,7 @@
         </div>
     </section>
 
+    
     <!-- Content Section -->
     <section class="max-w-screen-xl mx-auto px-4 py-12 md:py-16">
          <h2 class="text-2xl md:text-4xl font-bold text-center text-blue-600 mb-8 md:mb-12">Vision & Mission</h2>
