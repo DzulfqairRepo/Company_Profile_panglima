@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fishery Products - TATA NIAGA LESTARI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="icon" href="{{ asset('images/Company_Logo.jpeg') }}" type="image/x-icon">
+
 </head>
+
 <body class="bg-gray-50">
     <!-- Toast Container -->
     <div id="toast-container" class="fixed top-5 right-5 z-50 space-y-3"></div>
@@ -15,30 +19,46 @@
     <nav class="sticky top-0 z-40 bg-white border-b border-gray-200">
         <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
             <div class="flex items-center gap-2.5">
-                <img src="{{ asset('images/Company_Logo.jpeg') }}" alt="TATA NIAGA LESTARI logo" class="h-8 w-8 md:h-10 md:w-10 object-cover rounded-full">
-                <span class="text-lg md:text-2xl font-bold text-blue-600 drop-shadow-lg shadow-blue-400 bg-gradient-to-r from-blue-50 to-blue-100 px-2 md:px-4 py-1 md:py-2 rounded-lg hidden md:inline">Panglima Laut Fresh Frozen</span>
+                <img src="{{ asset('images/Company_Logo.jpeg') }}" alt="TATA NIAGA LESTARI logo"
+                    class="h-8 w-8 md:h-10 md:w-10 object-cover rounded-full">
+                <span
+                    class="text-lg md:text-2xl font-bold text-blue-600 drop-shadow-lg shadow-blue-400 bg-gradient-to-r from-blue-50 to-blue-100 px-2 md:px-4 py-1 md:py-2 rounded-lg hidden md:inline">Panglima
+                    Laut Fresh Frozen</span>
             </div>
 
             <div class="flex items-center gap-2 md:gap-0">
-                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100" id="drawer-toggle">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100"
+                    id="drawer-toggle">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
                 </button>
 
                 <!-- Cart button for mobile (outside drawer) -->
-                <button id="nav-cart-btn-mobile" data-modal-target="cart-modal" data-modal-toggle="cart-modal" class="relative md:hidden text-gray-700 hover:text-blue-600 transition">
+                <button id="nav-cart-btn-mobile" data-modal-target="cart-modal" data-modal-toggle="cart-modal"
+                    class="relative md:hidden text-gray-700 hover:text-blue-600 transition">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m10 0l2-9m-10 9h14m-14 0a2 2 0 11-4 0 2 2 0 014 0m10 0a2 2 0 11-4 0 2 2 0 014 0"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m10 0l2-9m-10 9h14m-14 0a2 2 0 11-4 0 2 2 0 014 0m10 0a2 2 0 11-4 0 2 2 0 014 0">
+                        </path>
                     </svg>
-                    <span id="cart-count-mobile" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden font-bold text-xs leading-none">0</span>
+                    <span id="cart-count-mobile"
+                        class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden font-bold text-xs leading-none">0</span>
                 </button>
             </div>
 
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="flex flex-col md:flex-row md:space-x-8 md:items-center text-sm md:text-base">
                     <li><a href="{{ route('index') }}" class="text-gray-700 hover:text-blue-600">Home</a></li>
-                    <li><a href="{{ route('fishery-products') }}" class="text-gray-700 hover:text-blue-600 font-bold text-blue-600">Fishery Products</a></li>
-                    <li><a href="{{ route('payment-terms') }}" class="text-gray-700 hover:text-blue-600">Payment Terms</a></li>
-                    <li><a href="{{ route('certificate') }}" class="text-gray-700 hover:text-blue-600">Certification</a></li>
+                    <li><a href="{{ route('fishery-products') }}"
+                            class="text-gray-700 hover:text-blue-600 font-bold text-blue-600">Fishery Products</a></li>
+                    <li><a href="{{ route('payment-terms') }}" class="text-gray-700 hover:text-blue-600">Payment
+                            Terms</a></li>
+                    <li><a href="{{ route('certificate') }}" class="text-gray-700 hover:text-blue-600">Certification</a>
+                    </li>
                     <li><a href="{{ route('contact') }}" class="text-gray-700 hover:text-blue-600">Contact</a></li>
                     <!-- li class="md:block hidden">
                         <button id="nav-cart-btn" data-modal-target="cart-modal" data-modal-toggle="cart-modal" class="relative text-gray-700 hover:text-blue-600 transition">
@@ -54,7 +74,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center py-12 md:py-20" style="background-image: url('{{ asset('images/nelayan2.png') }}'); background-size: cover; background-position: center;">
+    <section class="relative bg-cover bg-center py-12 md:py-20"
+        style="background-image: url('{{ asset('images/nelayan2.png') }}'); background-size: cover; background-position: center;">
         <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
         <div class="relative max-w-screen-xl mx-auto px-4 text-center text-white z-10">
             <h1 class="text-3xl md:text-5xl font-bold mb-3 md:mb-4">Fishery Products</h1>
@@ -72,7 +93,8 @@
                     <!-- Product Card 1 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_0.png') }}" alt="Snapper Fish" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_0.png') }}" alt="Snapper Fish"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Snapper Fish</h3>
@@ -89,7 +111,8 @@
                     <!-- Product Card 2 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_1.png') }}" alt="Tiger Grouper Fish" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_1.png') }}" alt="Tiger Grouper Fish"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Tiger Grouper Fish</h3>
@@ -106,7 +129,8 @@
                     <!-- Product Card 3 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_2.png') }}" alt="Red Grouper Fish" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_2.png') }}" alt="Red Grouper Fish"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Red Grouper Fish</h3>
@@ -123,7 +147,8 @@
                     <!-- Product Card 4 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_3.png') }}" alt="Skipjack Tuna" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_3.png') }}" alt="Skipjack Tuna"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Skipjack Tuna</h3>
@@ -140,7 +165,8 @@
                     <!-- Product Card 5 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_6.png') }}" alt="Mackerel Fish" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_6.png') }}" alt="Mackerel Fish"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Mackerel Fish</h3>
@@ -157,7 +183,8 @@
                     <!-- Product Card 6 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_4.png') }}" alt="Yellowfin Tuna" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_4.png') }}" alt="Yellowfin Tuna"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Yellowfin Tuna</h3>
@@ -174,7 +201,8 @@
                     <!-- Product Card 7 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_5.png') }}" alt="Milk Fish" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_5.png') }}" alt="Milk Fish"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Milk Fish</h3>
@@ -191,7 +219,8 @@
                     <!-- Product Card 8 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_9.png') }}" alt="Tiger Shrimp" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_9.png') }}" alt="Tiger Shrimp"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Tiger Shrimp</h3>
@@ -208,7 +237,8 @@
                     <!-- Product Card 9 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_7.png') }}" alt="Squid" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_7.png') }}" alt="Squid"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Squid</h3>
@@ -225,7 +255,8 @@
                     <!-- Product Card 10 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_10.png') }}" alt="Vanammei Shrimp" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_10.png') }}" alt="Vanammei Shrimp"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Vanammei Shrimp</h3>
@@ -234,19 +265,26 @@
                             <div class="mb-3 md:mb-4">
                                 <div class="space-y-2 mb-2 md:mb-3">
                                     <label class="flex items-center text-xs md:text-sm">
-                                        <input type="radio" name="vanammei-price" value="8.60" class="vanammei-price-radio mr-2">
-                                        <span class="text-gray-600">40 Pcs/kg: <span class="font-bold text-blue-600">$8.60</span></span>
+                                        <input type="radio" name="vanammei-price" value="8.60"
+                                            class="vanammei-price-radio mr-2">
+                                        <span class="text-gray-600">40 Pcs/kg: <span
+                                                class="font-bold text-blue-600">$8.60</span></span>
                                     </label>
                                     <label class="flex items-center text-xs md:text-sm">
-                                        <input type="radio" name="vanammei-price" value="10.80" class="vanammei-price-radio mr-2">
-                                        <span class="text-gray-600">30 Pcs/kg: <span class="font-bold text-blue-600">$10.80</span></span>
+                                        <input type="radio" name="vanammei-price" value="10.80"
+                                            class="vanammei-price-radio mr-2">
+                                        <span class="text-gray-600">30 Pcs/kg: <span
+                                                class="font-bold text-blue-600">$10.80</span></span>
                                     </label>
                                     <label class="flex items-center text-xs md:text-sm">
-                                        <input type="radio" name="vanammei-price" value="13.00" class="vanammei-price-radio mr-2">
-                                        <span class="text-gray-600">20 Pcs/kg: <span class="font-bold text-blue-600">$13.00</span></span>
+                                        <input type="radio" name="vanammei-price" value="13.00"
+                                            class="vanammei-price-radio mr-2">
+                                        <span class="text-gray-600">20 Pcs/kg: <span
+                                                class="font-bold text-blue-600">$13.00</span></span>
                                     </label>
                                 </div>
-                                <input type="number" placeholder="Qty" class="w-full px-2 py-1 border border-gray-300 rounded mb-2 text-sm">
+                                <input type="number" placeholder="Qty"
+                                    class="w-full px-2 py-1 border border-gray-300 rounded mb-2 text-sm">
                             </div>
                             <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
@@ -255,7 +293,8 @@
                     <!-- Product Card 11 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_11.png') }}" alt="Black Tiger Shrimp" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_11.png') }}" alt="Black Tiger Shrimp"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Black Tiger Shrimp</h3>
@@ -272,7 +311,8 @@
                     <!-- Product Card 12 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_1_8.png') }}" alt="Octopus" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_1_8.png') }}" alt="Octopus"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Octopus</h3>
@@ -289,7 +329,8 @@
                     <!-- Product Card 13 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_2_0.png') }}" alt="Black Marlin Fish" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_2_0.png') }}" alt="Black Marlin Fish"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Black Marlin Fish</h3>
@@ -306,7 +347,8 @@
                     <!-- Product Card 14 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_2_1.png') }}" alt="White Marlin Fish" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_2_1.png') }}" alt="White Marlin Fish"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">White Marlin Fish</h3>
@@ -323,7 +365,8 @@
                     <!-- Product Card 15 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_2_4.png') }}" alt="Stingray Fish" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_2_4.png') }}" alt="Stingray Fish"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Stingray Fish</h3>
@@ -340,7 +383,8 @@
                     <!-- Product Card 16 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_2_2.png') }}" alt="Pearl Lobster" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_2_2.png') }}" alt="Pearl Lobster"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Pearl Lobster</h3>
@@ -357,7 +401,8 @@
                     <!-- Product Card 17 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_2_2.png') }}" alt="Bamboo Lobster" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_2_2.png') }}" alt="Bamboo Lobster"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Bamboo Lobster</h3>
@@ -374,7 +419,8 @@
                     <!-- Product Card 18 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_2_2.png') }}" alt="Sand Lobster" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_2_2.png') }}" alt="Sand Lobster"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Sand Lobster</h3>
@@ -391,7 +437,8 @@
                     <!-- Product Card 19 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_2_3.png') }}" alt="King Crab Size A" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_2_3.png') }}" alt="King Crab Size A"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">King Crab - Size A</h3>
@@ -408,7 +455,8 @@
                     <!-- Product Card 20 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_2_3.png') }}" alt="King Crab Size B" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_2_3.png') }}" alt="King Crab Size B"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">King Crab - Size B</h3>
@@ -425,7 +473,8 @@
                     <!-- Product Card 21 -->
                     <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
                         <div class="w-full h-40 md:h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/fish_images/image_2_3.png') }}" alt="King Crab Size C" class="h-full object-contain">
+                            <img src="{{ asset('images/fish_images/image_2_3.png') }}" alt="King Crab Size C"
+                                class="h-full object-contain">
                         </div>
                         <div class="p-3 md:p-4">
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">King Crab - Size C</h3>
@@ -442,7 +491,8 @@
 
                 <!-- Checkout Button -->
                 <div class="mt-8 md:mt-12 flex justify-center">
-                    <button id="checkout-btn" data-modal-target="cart-modal" data-modal-toggle="cart-modal" class="bg-blue-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-bold hover:bg-blue-700 text-base md:text-lg">
+                    <button id="checkout-btn" data-modal-target="cart-modal" data-modal-toggle="cart-modal"
+                        class="bg-blue-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-bold hover:bg-blue-700 text-base md:text-lg">
                         View Cart & Checkout
                     </button>
                 </div>
@@ -451,16 +501,21 @@
     </section>
 
     <!-- Shopping Cart Modal -->
-    <div id="cart-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div id="cart-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-md max-h-full">
             <!-- Modal content -->
             <div class="relative bg-white rounded-lg shadow-lg">
                 <!-- Modal header -->
                 <div class="flex items-center justify-between p-3 md:p-5 border-b rounded-t">
                     <h3 class="text-lg md:text-xl font-semibold text-blue-600">Shopping Cart</h3>
-                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="cart-modal">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="cart-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                         </svg>
                         <span class="sr-only">Close modal</span>
                     </button>
@@ -487,9 +542,14 @@
                     </div>
                 </div>
                 <!-- Modal footer -->
-                <div class="flex flex-col md:flex-row items-center p-3 md:p-5 border-t border-gray-200 rounded-b gap-2">
-                    <button type="button" class="w-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 text-center" data-modal-hide="cart-modal">Continue Shopping</button>
-                    <button type="button" class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 text-center">Proceed to Checkout</button>
+                <div
+                    class="flex flex-col md:flex-row items-center p-3 md:p-5 border-t border-gray-200 rounded-b gap-2">
+                    <button type="button"
+                        class="w-full text-gray-700 bg-gray-200 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 text-center"
+                        data-modal-hide="cart-modal">Continue Shopping</button>
+                    <button type="button"
+                        class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 text-center">Proceed
+                        to Checkout</button>
                 </div>
             </div>
         </div>
@@ -567,7 +627,8 @@
                     }
                     productPrice = parseFloat(selectedRadio.value);
                 } else {
-                    const priceText = productCard.querySelector('.text-lg.md\\:text-2xl.font-bold.text-blue-600');
+                    const priceText = productCard.querySelector(
+                        '.text-lg.md\\:text-2xl.font-bold.text-blue-600');
                     productPrice = parseFloat(priceText.textContent.replace('$', '').split('/')[0]);
                 }
 
@@ -658,4 +719,5 @@
         });
     </script>
 </body>
+
 </html>
