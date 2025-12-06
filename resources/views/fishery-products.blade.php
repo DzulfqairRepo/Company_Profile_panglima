@@ -40,14 +40,14 @@
                     <li><a href="{{ route('payment-terms') }}" class="text-gray-700 hover:text-blue-600">Payment Terms</a></li>
                     <li><a href="{{ route('certificate') }}" class="text-gray-700 hover:text-blue-600">Certification</a></li>
                     <li><a href="{{ route('contact') }}" class="text-gray-700 hover:text-blue-600">Contact</a></li>
-                    <li class="md:block hidden">
+                    <!-- li class="md:block hidden">
                         <button id="nav-cart-btn" data-modal-target="cart-modal" data-modal-toggle="cart-modal" class="relative text-gray-700 hover:text-blue-600 transition">
                             <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m10 0l2-9m-10 9h14m-14 0a2 2 0 11-4 0 2 2 0 014 0m10 0a2 2 0 11-4 0 2 2 0 014 0"></path>
                             </svg>
                             <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden font-bold text-xs leading-none">0</span>
                         </button>
-                    </li>
+                    </li-->
                 </ul>
             </div>
         </div>
