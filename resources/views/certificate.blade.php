@@ -54,12 +54,6 @@
             </div>
 
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <div class="mb-4 flex justify-center md:justify-start">
-                    <svg class="w-12 h-12 md:w-16 md:h-16 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                </div>
-
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">Certificate of Good Manufacturing Practices</h3>
 
                 <p class="text-gray-600 text-sm md:text-base mb-4 md:mb-6 text-justify">Fresh Cephalopods - Cephalopoda Segar (Cumi-cumi, Gurita, Sotong) / Fresh Cephalopods (Squid, Octopus, Cuttlefish) - Certificate No. 13804/11/SKP/SG/I/2020 (P.: 00015872). Issued by the Ministry of Marine Affairs and Fisheries, Directorate General of Product Competitiveness. Fish Processing Plant: CV. TATA NIAGA LESTARI. Address: Jl. TWK Abdul Aziz No.32, Kel. Merduati, Kec. Kuta Raja, Kota Banda Aceh. Processing Steps: Receiving, Processing, Chilling, Packing/Labelling, Chill Storing, Stuffing. Ranking: B.</p>
@@ -84,12 +78,6 @@
             </div>
 
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition order-1 md:order-2">
-                <div class="mb-4 flex justify-center md:justify-start">
-                    <svg class="w-12 h-12 md:w-16 md:h-16 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                </div>
-
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">Certificate of Good Manufacturing Practices</h3>
 
                 <p class="text-gray-600 text-sm md:text-base mb-4 md:mb-6 text-justify">Fresh Demersal Fish - Ikan Demersal Segar (Kakap, Kerapu, Bawal, Baronang) / Fresh Demersal Fish (Snapper, Grouper, Pomfret, Spinefoot) - Certificate No. 13805/11/SKP/SG/I/2020 (P.: 00015873). Issued by the Ministry of Marine Affairs and Fisheries, Directorate General of Product Competitiveness. Fish Processing Plant: CV. TATA NIAGA LESTARI. Address: Jl. TWK Abdul Aziz No.32, Kel. Merduati, Kec. Kuta Raja, Kota Banda Aceh. Processing Steps: Receiving, Processing, Chilling, Packing/Labelling, Chill Storing, Stuffing. Ranking: B.</p>
@@ -116,9 +104,6 @@
             </div>
 
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition order-1 md:order-2">
-                <div class="mb-4 flex justify-center md:justify-start">
-                </div>
-
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">Certificate of Good Manufacturing Practices</h3>
 
                 <p class="text-gray-600 text-sm md:text-base mb-4 md:mb-6 text-justify">Fresh Tuna Loin - Certificate No. 13803/11/SKP/SG/T/2020. Issued by the Ministry of Marine Affairs and Fisheries, Directorate General of Product Competitiveness. Processing steps include: Receiving, Processing, Chilling, Packing/Labelling, Chill Storing, Stuffing. Ranking: B. Issued in Jakarta on 21 January 2020, valid until 21 January 2022.</p>
@@ -135,9 +120,6 @@
             </div>
 
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <div class="mb-4 flex justify-center md:justify-start">
-                </div>
-
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">HACCP Training Certificate</h3>
 
                 <p class="text-gray-600 text-sm md:text-base mb-4 md:mb-6 text-justify">Personal Training for HACCP (Hazard Analysis Critical Control Point) - Certificate No. 009-01-FSM-18/MNI-II. Awarded to Muhammad Iqbal for successfully completing the training. Organized by PT. Mina Maritim Indonesia in Banda Aceh on 25 February 2018. Trainer: Ahmad Qomarudin, S.T. Chief Executive Officer: Fa'iz Alhamdani Buntoro S.Pi.</p>
@@ -151,9 +133,6 @@
             </div>
 
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition order-1 md:order-2">
-                <div class="mb-4 flex justify-center md:justify-start">
-                </div>
-
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">ISO 22000:2005 Food Safety Management System Training Certificate</h3>
 
                 <p class="text-gray-600 text-sm md:text-base mb-4 md:mb-6 text-justify">Personal Training for Food Safety Management System Based on ISO 22000:2005 - Certificate No. 009-01-FSM-18/MNI-II. Awarded to Muhammad Iqbal for successfully completing the training. Organized by PT. Mina Maritim Indonesia in Banda Aceh on 25 February 2018. Trainer: Ahmad Qomarudin, S.T. Chief Executive Officer: Fa'iz Alhamdani Buntoro S.Pi.</p>
@@ -167,12 +146,6 @@
             </div>
 
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <div class="mb-4 flex justify-center md:justify-start">
-                    <svg class="w-12 h-12 md:w-16 md:h-16 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                </div>
-
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">Location Permit (Izin Lokasi)</h3>
 
                 <p class="text-gray-600 text-sm md:text-base mb-4 md:mb-6 text-justify">Issued by the Government of the Republic of Indonesia through the OSS (Online Single Submission) System. Company: CV TATA NIAGA LESTARI. Business Registration Number: 9120301921725. Location: Jl. TWK. Abd. Aziz No. 32, Merduati, Kuta Raja, Kota Banda Aceh, Aceh. Land Area: 64 Ha. Business Activities: Fishery, Textile Industry, Transportation Equipment Industry, Processing Industry, Machine Repair, Trading, Procurement of Goods and Services. Coordinates: -6.4582626, 107.5163313.</p>
@@ -193,12 +166,6 @@
             </div>
 
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition order-1 md:order-2">
-                <div class="mb-4 flex justify-center md:justify-start">
-                    <svg class="w-12 h-12 md:w-16 md:h-16 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                </div>
-
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">Certificate of Good Manufacturing Practices</h3>
 
                 <p class="text-gray-600 text-sm md:text-base mb-4 md:mb-6 text-justify">Fresh Tuna (Tuna Segar) - Certificate No. 13802/11/SKP/SG/T/2020 (P.: 00015870). Issued by the Ministry of Marine Affairs and Fisheries, Directorate General of Product Competitiveness. Fish Processing Plant: CV. TATA NIAGA LESTARI. Address: Jl. TWK Abdul Aziz No.32, Kel. Merduati, Kec. Kuta Raja, Kota Banda Aceh. Processing Steps: Receiving, Processing, Chilling, Packing/Labelling, Chill Storing, Stuffing. Ranking: B.</p>
@@ -223,12 +190,6 @@
             </div>
 
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <div class="mb-4 flex justify-center md:justify-start">
-                    <svg class="w-12 h-12 md:w-16 md:h-16 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                </div>
-
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">GMP (Good Manufacturing Practice) Training Certificate</h3>
 
                 <p class="text-gray-600 text-sm md:text-base mb-4 md:mb-6 text-justify">Personal Training for GMP (Good Manufacturing Practice) - Certificate No. 009-01-FSM-18/MNI-II. Awarded to Muhammad Iqbal for successfully completing the training. Organized by PT. Mina Maritim Indonesia in Banda Aceh on 25 February 2018. Trainer: Ahmad Qomarudin, S.T. Chief Executive Officer: Fa'iz Alhamdani Buntoro S.Pi.</p>
@@ -253,12 +214,6 @@
             </div>
 
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition order-1 md:order-2">
-                <div class="mb-4 flex justify-center md:justify-start">
-                    <svg class="w-12 h-12 md:w-16 md:h-16 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                </div>
-
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4">SIUP - Small Trading Business License</h3>
 
                 <p class="text-gray-600 text-sm md:text-base mb-4 md:mb-6 text-justify">Surat Izin Usaha Perdagangan (SIUP) - Kecil. License No. 1073-1200/01.01/PK/X/2017.P-II. Issued by Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu (DPM-PTSP) Kota Banda Aceh. Company: CV. TATA NIAGA LESTARI. Person in Charge: Muhammad Iqbal. Address: Jl. TWK. Abd. Aziz, No. 32, Gp. Merduati, Kec. Kuta Raja, Kota Banda Aceh. Phone: 0651-23276. Capital: Rp. 200.000.000. Category: Supplier, Export and Import.</p>
