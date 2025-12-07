@@ -270,36 +270,13 @@
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Vanammei Shrimp</h3>
                             <p class="text-gray-600 text-xs md:text-sm mb-2">Fresh & Frozen</p>
                             <p class="text-gray-500 text-xs mb-3 md:mb-4">FOB Aceh Port</p>
-                            <div class="flex justify-between items-center mb-3 md:mb-4 gap-2">
-                                <span class="text-lg md:text-2xl font-bold text-blue-600">$8.60 - $13.00/kg</span>
-                                <!-- input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm"-->
-                            </div>
-                            <!-- Radio buttons and qty input for shrimp - commented out
                             <div class="mb-3 md:mb-4">
-                                <div class="space-y-2 mb-2 md:mb-3">
-                                    <label class="flex items-center text-xs md:text-sm">
-                                        <input type="radio" name="vanammei-price" value="8.60"
-                                            class="vanammei-price-radio mr-2">
-                                        <span class="text-gray-600">40 Pcs/kg: <span
-                                                class="font-bold text-blue-600">$8.60</span></span>
-                                    </label>
-                                    <label class="flex items-center text-xs md:text-sm">
-                                        <input type="radio" name="vanammei-price" value="10.80"
-                                            class="vanammei-price-radio mr-2">
-                                        <span class="text-gray-600">30 Pcs/kg: <span
-                                                class="font-bold text-blue-600">$10.80</span></span>
-                                    </label>
-                                    <label class="flex items-center text-xs md:text-sm">
-                                        <input type="radio" name="vanammei-price" value="13.00"
-                                            class="vanammei-price-radio mr-2">
-                                        <span class="text-gray-600">20 Pcs/kg: <span
-                                                class="font-bold text-blue-600">$13.00</span></span>
-                                    </label>
+                                <div class="space-y-1 mb-2 md:mb-3">
+                                    <p class="text-xs md:text-sm text-gray-600">40 Pcs/kg: <span class="font-bold text-blue-600">$8.60</span></p>
+                                    <p class="text-xs md:text-sm text-gray-600">30 Pcs/kg: <span class="font-bold text-blue-600">$10.80</span></p>
+                                    <p class="text-xs md:text-sm text-gray-600">20 Pcs/kg: <span class="font-bold text-blue-600">$13.00</span></p>
                                 </div>
-                                <input type="number" placeholder="Qty"
-                                    class="w-full px-2 py-1 border border-gray-300 rounded mb-2 text-sm">
                             </div>
-                            -->
                             <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
