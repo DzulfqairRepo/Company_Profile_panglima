@@ -7,7 +7,11 @@
     <title>Fishery Products - TATA NIAGA LESTARI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
-    <link rel="icon" href="{{ asset('images/Company_Logo.jpeg') }}" type="image/x-icon">
+
+
+    <link rel="icon" type="image/jpeg" href="{{ asset('images/Company_Logo.jpeg') }}" />
+    <link rel="icon" type="image/jpeg" href="{{ asset('images/Company_Logo.jpeg') }}g" />
+
 
 </head>
 
@@ -37,7 +41,7 @@
                     </svg>
                 </button>
 
-                <!-- Cart button for mobile (outside drawer) -->
+                <!-- Cart button for mobile (outside drawer) - commented out
                 <button id="nav-cart-btn-mobile" data-modal-target="cart-modal" data-modal-toggle="cart-modal"
                     class="relative md:hidden text-gray-700 hover:text-blue-600 transition">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,6 +52,7 @@
                     <span id="cart-count-mobile"
                         class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden font-bold text-xs leading-none">0</span>
                 </button>
+                -->
             </div>
 
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -79,7 +84,10 @@
         <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
         <div class="relative max-w-screen-xl mx-auto px-4 text-center text-white z-10">
             <h1 class="text-3xl md:text-5xl font-bold mb-3 md:mb-4">Fishery Products</h1>
-            <p class="text-base md:text-xl">Premium Quality Seafood & Agriculture Products</p>
+            <p class="text-base md:text-xl mb-6">Premium Quality Seafood & Agriculture Products</p>
+            <button data-modal-target="bank-modal" data-modal-toggle="bank-modal" class="inline-block bg-blue-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-bold hover:bg-blue-700 transition text-sm md:text-base">
+                View Bank Information
+            </button>
         </div>
     </section>
 
@@ -262,6 +270,11 @@
                             <h3 class="text-lg md:text-xl font-bold text-blue-600 mb-2">Vanammei Shrimp</h3>
                             <p class="text-gray-600 text-xs md:text-sm mb-2">Fresh & Frozen</p>
                             <p class="text-gray-500 text-xs mb-3 md:mb-4">FOB Aceh Port</p>
+                            <div class="flex justify-between items-center mb-3 md:mb-4 gap-2">
+                                <span class="text-lg md:text-2xl font-bold text-blue-600">$8.60 - $13.00/kg</span>
+                                <!-- input type="number" placeholder="Qty" class="w-14 md:w-16 px-2 py-1 border border-gray-300 rounded text-sm"-->
+                            </div>
+                            <!-- Radio buttons and qty input for shrimp - commented out
                             <div class="mb-3 md:mb-4">
                                 <div class="space-y-2 mb-2 md:mb-3">
                                     <label class="flex items-center text-xs md:text-sm">
@@ -286,6 +299,7 @@
                                 <input type="number" placeholder="Qty"
                                     class="w-full px-2 py-1 border border-gray-300 rounded mb-2 text-sm">
                             </div>
+                            -->
                             <!-- button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 add-to-cart text-sm md:text-base">Add to Cart</button-->
                         </div>
                     </div>
@@ -489,24 +503,23 @@
                     </div>
                 </div>
 
-                <!-- Checkout Button -->
+                <!-- Checkout Button - commented out
                 <div class="mt-8 md:mt-12 flex justify-center">
                     <button id="checkout-btn" data-modal-target="cart-modal" data-modal-toggle="cart-modal"
                         class="bg-blue-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-bold hover:bg-blue-700 text-base md:text-lg">
                         View Cart & Checkout
                     </button>
                 </div>
+                -->
             </div>
         </div>
     </section>
 
-    <!-- Shopping Cart Modal -->
+    <!-- Shopping Cart Modal - commented out
     <div id="cart-modal" tabindex="-1" aria-hidden="true"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative p-4 w-full max-w-md max-h-full">
-            <!-- Modal content -->
             <div class="relative bg-white rounded-lg shadow-lg">
-                <!-- Modal header -->
                 <div class="flex items-center justify-between p-3 md:p-5 border-b rounded-t">
                     <h3 class="text-lg md:text-xl font-semibold text-blue-600">Shopping Cart</h3>
                     <button type="button"
@@ -520,7 +533,6 @@
                         <span class="sr-only">Close modal</span>
                     </button>
                 </div>
-                <!-- Modal body -->
                 <div class="p-3 md:p-5">
                     <div id="cart-items" class="mb-6 max-h-72 overflow-y-auto">
                         <p class="text-gray-500 text-center py-8 text-sm md:text-base">Your cart is empty</p>
@@ -541,7 +553,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Modal footer -->
                 <div
                     class="flex flex-col md:flex-row items-center p-3 md:p-5 border-t border-gray-200 rounded-b gap-2">
                     <button type="button"
@@ -550,6 +561,63 @@
                     <button type="button"
                         class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 text-center">Proceed
                         to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!-- Bank Information Modal -->
+    <div id="bank-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-md max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow-lg">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-lg md:text-xl font-semibold text-blue-600">Bank Information</h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="bank-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xs md:text-sm">MANDIRI</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg md:text-xl font-bold text-blue-600">Mandiri Bank</h4>
+                            <p class="text-gray-500 text-sm">Government Bank</p>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-200 pt-4 mt-4 space-y-3">
+                        <div>
+                            <p class="text-gray-500 text-xs md:text-sm">Account Number</p>
+                            <p class="font-mono text-base md:text-lg font-bold text-gray-800">1230001171067</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500 text-xs md:text-sm">Account Name</p>
+                            <p class="font-semibold text-base md:text-lg text-gray-800">Panglima Laut Fresh Frozen</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500 text-xs md:text-sm">Swift Code</p>
+                            <p class="font-mono text-base md:text-lg font-bold text-gray-800">BMRIIDJA</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                    <button type="button"
+                        class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                        data-modal-hide="bank-modal">Close</button>
                 </div>
             </div>
         </div>

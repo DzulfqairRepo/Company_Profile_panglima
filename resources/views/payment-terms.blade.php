@@ -80,13 +80,15 @@
                             </td>
                             <td class="px-6 py-5 text-gray-600 text-sm md:text-base">
                                 <ul class="list-disc list-inside space-y-2">
+                                    <!-- BNI Bank - commented out
                                     <li>
                                         <span class="font-medium">Bank National Indonesia (BNI)</span><br>
                                         <span class="ml-5 text-gray-500">Swift Code: BNINIDJAXXX</span>
                                     </li>
+                                    -->
                                     <li>
                                         <span class="font-medium">Mandiri Bank</span><br>
-                                        <span class="ml-5 text-gray-500">Swift Code: BMRIIDJA853</span>
+                                        <span class="ml-5 text-gray-500">Swift Code: BMRIIDJA</span>
                                     </li>
                                 </ul>
                             </td>
@@ -185,7 +187,7 @@
     <section class="max-w-screen-xl mx-auto px-4 py-12 md:py-16">
         <h2 class="text-2xl md:text-4xl font-bold text-center text-blue-600 mb-8 md:mb-12">Bank Information for L/C Payments</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            <!-- BNI -->
+            <!-- BNI - commented out
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
                 <div class="flex items-center mb-4">
                     <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
@@ -203,6 +205,7 @@
                     </p>
                 </div>
             </div>
+            -->
 
             <!-- Mandiri -->
             <div class="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
@@ -215,10 +218,18 @@
                         <p class="text-gray-500 text-sm">Government Bank</p>
                     </div>
                 </div>
-                <div class="border-t border-gray-200 pt-4 mt-4">
+                <div class="border-t border-gray-200 pt-4 mt-4 space-y-2">
+                    <p class="text-gray-600 text-sm md:text-base">
+                        <span class="font-semibold text-blue-600">Account Number:</span>
+                        <span class="font-mono bg-gray-100 px-2 py-1 rounded">1230001171067</span>
+                    </p>
+                    <p class="text-gray-600 text-sm md:text-base">
+                        <span class="font-semibold text-blue-600">Account Name:</span>
+                        <span class="font-mono bg-gray-100 px-2 py-1 rounded">Panglima Laut Fresh Frozen</span>
+                    </p>
                     <p class="text-gray-600 text-sm md:text-base">
                         <span class="font-semibold text-blue-600">Swift Code:</span>
-                        <span class="font-mono bg-gray-100 px-2 py-1 rounded">BMRIIDJA853</span>
+                        <span class="font-mono bg-gray-100 px-2 py-1 rounded">BMRIIDJA</span>
                     </p>
                 </div>
             </div>
