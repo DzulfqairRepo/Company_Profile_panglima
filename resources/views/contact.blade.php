@@ -115,8 +115,9 @@
                             <span class="font-semibold text-gray-700">Monday - Sunday (All day)</span>
                             <span class="text-gray-600">7:00 AM - 11:00 PM</span>
                         </div>
+                    </div>
+                    <p class="text-red-600 font-semibold mt-4 text-sm md:text-base">⚠️ Closed during local and International holidays</p>
                 </div>
-            </div>
         </div>
     </section>
 
