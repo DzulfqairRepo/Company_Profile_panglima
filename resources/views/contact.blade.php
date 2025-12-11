@@ -1,35 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - TATA NIAGA LESTARI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
-</head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-40 bg-white border-b border-gray-200">
-        <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-            <div class="flex items-center gap-2.5">
-                <img src="{{ asset('images/Company_Logo.jpeg') }}" alt="TATA NIAGA LESTARI logo" class="h-8 w-8 md:h-10 md:w-10 object-cover rounded-full">
-                <span class="text-lg md:text-2xl font-bold text-blue-600 drop-shadow-lg shadow-blue-400 bg-gradient-to-r from-blue-50 to-blue-100 px-2 md:px-4 py-1 md:py-2 rounded-lg hidden md:inline">Panglima Laut Fresh Frozen</span>
-            </div>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="flex flex-col md:flex-row md:space-x-8 text-sm md:text-base">
-                    <li><a href="{{ route('index') }}" class="text-gray-700 hover:text-blue-600">Home</a></li>
-                    <li><a href="{{ route('fishery-products') }}" class="text-gray-700 hover:text-blue-600">Fishery Products</a></li>
-                    <li><a href="{{ route('payment-terms') }}" class="text-gray-700 hover:text-blue-600">Payment Terms</a></li>
-                    <li><a href="{{ route('certificate') }}" class="text-gray-700 hover:text-blue-600">Certification</a></li>
-                    <li><a href="{{ route('contact') }}" class="font-bold text-blue-600 hover:text-blue-700">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+@extends('index')
 
+@section('title', 'Contact Us - TATA NIAGA LESTARI')
+
+@section('content')
     <!-- Hero Section -->
     <section class="relative bg-cover bg-center py-12 md:py-20" style="background-image: url('{{ asset('images/nelayan2.png') }}'); background-size: cover; background-position: center;">
         <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
@@ -54,8 +27,9 @@
                 <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-3 md:mb-4 text-center">Address</h3>
                 <div class="text-gray-600 text-center text-sm md:text-base">
                     <p class="font-semibold mb-2">Panglima Laut Fresh Frozen</p>
-                    <p>Jl. Teuku Umar No. 456</p>
-                    <p>Banda Aceh, Aceh 23112</p>
+                    <p>Jl. Raya Kalimukya No. 4</p>
+                    <p>Kebunduren Cilodong</p>
+                    <p>Depok, Jabar 16413</p>
                     <p>Indonesia</p>
                 </div>
             </div>
@@ -138,37 +112,9 @@
                     <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-4 md:mb-6">Office Hours</h3>
                     <div class="space-y-2 md:space-y-3 text-sm md:text-base">
                         <div class="flex justify-between py-2 border-b">
-                            <span class="font-semibold text-gray-700">Monday - Friday</span>
-                            <span class="text-gray-600">8:00 AM - 5:00 PM</span>
+                            <span class="font-semibold text-gray-700">Monday - Sunday (All day)</span>
+                            <span class="text-gray-600">7:00 AM - 11:00 PM</span>
                         </div>
-                        <div class="flex justify-between py-2 border-b">
-                            <span class="font-semibold text-gray-700">Saturday</span>
-                            <span class="text-gray-600">9:00 AM - 1:00 PM</span>
-                        </div>
-                        <div class="flex justify-between py-2">
-                            <span class="font-semibold text-gray-700">Sunday</span>
-                            <span class="text-gray-600">Closed</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="bg-white p-4 md:p-8 rounded-lg shadow-md">
-                    <h3 class="text-lg md:text-2xl font-bold text-blue-600 mb-4 md:mb-6">Connect With Us</h3>
-                    <div class="space-y-3 md:space-y-4">
-                        <a href="#" class="flex items-center text-gray-700 hover:text-blue-600 transition text-sm md:text-base">
-                            <svg class="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                            <span>Facebook</span>
-                        </a>
-                        <a href="#" class="flex items-center text-gray-700 hover:text-blue-600 transition text-sm md:text-base">
-                            <svg class="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20v-7.21H5.5V9.25h2.79V7.16c0-2.77 1.69-4.28 4.16-4.28 1.18 0 2.2.09 2.49.13v2.88h-1.71c-1.34 0-1.6.64-1.6 1.57v2.05h3.2l-.41 3.54h-2.79V20"/></svg>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="#" class="flex items-center text-gray-700 hover:text-blue-600 transition text-sm md:text-base">
-                            <svg class="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75-2.35 7-5 7-5s-1.1.55-3 1.1"/></svg>
-                            <span>Twitter</span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -178,17 +124,7 @@
     <section class="max-w-screen-xl mx-auto px-4 py-12 md:py-16">
         <h2 class="text-2xl md:text-4xl font-bold text-center text-blue-600 mb-8 md:mb-12">Find Us</h2>
         <div class="bg-white p-4 md:p-6 rounded-lg shadow-md overflow-hidden">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.8816387847597!2d95.32119!3d5.552603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304039c5c5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2sBanda%20Aceh!5e0!3m2!1sen!2sid!4v1234567890" width="100%" height="300" class="md:h-96" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.269471626034!2d106.8197643!3d-6.4316667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0f0f0f0f0f1%3A0x0!2zNsKwMjUnNTAuMCJTIDEwNsKwNDknMTguMCJF!5e0!3m2!1sen!2sid!4v1234567890" width="100%" height="300" class="md:h-96" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="sticky bottom-0 z-40 bg-gray-800 text-white py-6 md:py-8">
-        <div class="max-w-screen-xl mx-auto px-4 text-center">
-            <p class="text-sm md:text-base">&copy; 2026 Panglima Laut Fresh Frozen. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
-</body>
-</html>
+@endsection
