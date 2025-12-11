@@ -13,6 +13,13 @@
         </div>
     </section>
 
+    <!-- Banner Section -->
+    <section class="max-w-screen-xl mx-auto px-4 py-8 md:py-12">
+        <div class="w-full rounded-lg shadow-md overflow-hidden">
+            <img src="{{ asset('images/banner.jpeg') }}" alt="Company Banner" class="w-full h-auto object-cover">
+        </div>
+    </section>
+
     <!-- Store Location and Interior Photos Section -->
     <section class="max-w-screen-xl mx-auto px-4 py-12 md:py-16">
         <h2 class="text-2xl md:text-4xl font-bold text-center text-blue-600 mb-8 md:mb-12">Our Store</h2>
